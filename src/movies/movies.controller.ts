@@ -17,7 +17,7 @@ export class MoviesController {
   constructor(private readonly movieService: MoviesService) {}
 
   @Get()
-  getAll(@Req() req, @Res() res): Movie[] {
+  getAll(): Movie[] {
     return this.movieService.getAll();
   }
 
